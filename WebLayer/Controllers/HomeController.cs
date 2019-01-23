@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace WebLayer.Controllers
 {
@@ -31,6 +32,42 @@ namespace WebLayer.Controllers
         public ActionResult Publico()
         {
             return View();
+        }
+
+        [HttpPost]
+        public JsonResult LogIn(String usuario, String password)
+        {
+            String mensaje = "";
+            String codigo = "";
+
+            try
+            {
+                if (usuario == "admin" && password == "admin")
+                {
+                    FormsAuthentication.SetAuthCookie(usuario, false);
+                    mensaje = "Usuario y Password Correctos";
+                    codigo = "1";
+                }
+                else
+                {
+                    mensaje = "Usuario y Password Incorrectos";
+                    codigo = "-1";
+                }
+
+            }
+            catch(Exception ex)
+            {
+                mensaje = ex.Message;
+                codigo = "-1";
+            }
+           
+           
+
+            return Json(new
+            {
+                Codigo = codigo,
+                Mensaje = mensaje
+                }, JsonRequestBehavior.AllowGet);
         }
     }
 }

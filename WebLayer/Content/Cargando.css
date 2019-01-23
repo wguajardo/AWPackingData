@@ -39,8 +39,10 @@
 
 
 .cssload-thecube {
-	width: 73px;
-	height: 73px;
+	/*width: 73px;
+	height: 73px;*/
+    width: 45px;
+	height: 45px;
 	margin: 0 auto;
 	margin-top: 49px;
 	position: relative;
