@@ -10,7 +10,8 @@ namespace WebLayer.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View("~/Views/Home/Publico.cshtml");
+            //return Publico();
         }
 
         public ActionResult About()
@@ -24,6 +25,11 @@ namespace WebLayer.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Publico()
+        {
             return View();
         }
     }

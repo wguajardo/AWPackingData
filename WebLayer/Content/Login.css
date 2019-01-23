@@ -1,0 +1,78 @@
+﻿
+
+body {
+    background-image: url('../img/background_imagen_home.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 0px;
+}
+
+#login .container #login-row #login-column .login-box {
+    margin-top: 10px;
+    max-width: 600px;
+    height: 450px;
+    /* border: 1px solid #9C9C9C;*/
+    background-color: rgba(255,255,255,0.8);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 5px 28px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 5px 28px -2px rgba(0,0,0,0.75);
+    box-shadow: 1px 5px 28px -2px rgba(0,0,0,0.75);
+}
+
+#imagen_lateral {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 320px;
+    background: transparent;
+}
+
+#login .container #login-row #login-column .login-box #login-form {
+    padding: 20px;
+}
+
+    #login .container #login-row #login-column .login-box #login-form #register-link {
+        margin-top: -85px;
+    }
+
+
+
+#imagen_lateral img {
+    width: 100%;
+    height: auto;
+    position: absolute; /*El div debe tener la propiedad position distinta de static*/
+    top: 5%;
+    left: 5%;
+}
+
+.btn-info {
+    background: #FF5100;
+    border-color: #FF5100;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+    .btn-info:hover {
+        background-color: #0A3D9A;
+    }
+
+.text-info {
+    color: #333334;
+    font-size: 14px;
+    font-family: 'KlavikaLight-Plain';
+}
+
+
+#logo_login img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
