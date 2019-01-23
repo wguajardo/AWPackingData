@@ -27,7 +27,8 @@ namespace WebLayer
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/Login.css",
-                      "~/Content/cargando.css"));
+                      "~/Content/cargando.css",
+                       "~/Content/Fuentes.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/login_js").Include(
                 "~/Scripts/Login_1.1.js"));

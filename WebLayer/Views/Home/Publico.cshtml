@@ -18,9 +18,9 @@
     <div id="cabecera">
         <div class="container">
             <div class="row">
-                <div class="col-md-4"></div>
+                <div class="col-md-4 text-left">Packing Data</div>
                 <div class="col-md-4 text-center">Logo</div>
-                <div class="col-md-4"></div>
+                <div class="col-md-4 text-right">AW Desarrollo</div>
             </div>
         </div>
     </div>
@@ -31,9 +31,10 @@
                 <div id="login-column" class="col-md-4">
                     <div class="login-box col-md-12">
                         <form id="login-form" class="form">
-                            <div class="col-md-12" id="logo_login">
+                            <!--<div class="col-md-12" id="logo_login">
                                 <img src="images/abastible-logo.svg" alt="Logo PackingData">
-                            </div>
+                            </div> -->
+
                             <div class="col-md-12" style="text-align: center;">
                                 <h2>Inicio de Sesión</h2>
                             </div>
@@ -50,13 +51,24 @@
                                 <input type="button" name="submit" class="btn btn-info btn-md" id="entrar_login" value="Entrar">
                             </div>
                             <div class="col-md-12">
-                                <div class="col-md-12 parpadea cargando" id="cargando">
-                                    <h2><label>Cargando...</label></h2>
-                                </div>
                                 <div class="col-md-12" id="mensajes">
                                 </div>
                             </div>
+
                         </form>
+                        <div class="col-md-12">
+                            <div class="col-md-12 cargando" id="cargando">
+                                <div class="cssload-thecube">
+                                    <div class="cssload-cube cssload-c1"></div>
+                                    <div class="cssload-cube cssload-c2"></div>
+                                    <div class="cssload-cube cssload-c4"></div>
+                                    <div class="cssload-cube cssload-c3"></div>
+                                </div>
+                                <br />
+                                <h2 class="parpadea"><label>Cargando...</label></h2>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
