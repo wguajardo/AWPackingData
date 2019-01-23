@@ -12,8 +12,18 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
 </head>
 <body>
+    <div id="cabecera">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center">Logo</div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </div>
     <div id="login">
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
@@ -57,6 +67,13 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/login_js")
     @Scripts.Render("~/bundles/js")
+    <script type="text/javascript" language="javascript">
+        (function () {
+            var login = window.Login;
+            login.init();
+        })();
+    </script>
+
 
 </body>
 </html>

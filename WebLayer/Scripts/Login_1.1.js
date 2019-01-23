@@ -6,8 +6,8 @@ Login = {
 
     init: function () {
         var context = this;
-        context.EventosBotones();
-        contex = Loader;
-        contex.NoVisible("#cargando");
+        //context.EventosBotones();
+        var context_loader = Loader;
+        context_loader.NoVisible("#cargando");
     },
 }
